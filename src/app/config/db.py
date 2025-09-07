@@ -10,7 +10,7 @@ from sqlalchemy.ext.asyncio import (
 
 from app.config.settings import settings
 
-from .uow import IUnitOfWork
+from .uow import IUnitOfWork  # type: ignore
 
 SessionFactory = Callable[..., AbstractAsyncContextManager[AsyncSession]]
 
